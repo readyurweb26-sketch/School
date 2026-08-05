@@ -161,7 +161,7 @@ header.scrolled .hamburger span { background: var(--blue-deep); }
   transition: max-height .5s var(--ease);
   border-radius: 0 0 var(--radius-md) var(--radius-md);
 }
-.mobile-menu.open { max-height: 520px; }
+.mobile-menu.open { display: block;max-height: 520px; }
 .mobile-menu a {
   display: block; font-family: 'Baloo 2', cursive; font-weight: 600; font-size: 1.15rem;
   padding: 14px 4px; border-bottom: 1px solid var(--cream-2);
@@ -195,7 +195,6 @@ header.scrolled .hamburger span { background: var(--blue-deep); }
 @media (max-width: 860px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
-  .mobile-menu { display: block; }
 }
 
 /* ===== HERO ===== */
