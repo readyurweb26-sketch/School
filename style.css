@@ -190,7 +190,7 @@ header.scrolled .hamburger span { background: var(--navy); }
   background: var(--brass-2);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1150px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
 }
@@ -211,7 +211,7 @@ header.scrolled .hamburger span { background: var(--navy); }
 .hero-emblem img {
   width: 100%; height: 100%; object-fit: cover; display: block;
 }
-@media (max-width: 860px) { .hero-emblem { display: none; } }
+@media (max-width: 1199px) { .hero-emblem { display: none; } }
 
 .hero-inner {
   position: relative; z-index: 2; max-width: 760px;
