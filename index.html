@@ -3,36 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Urmila Academy (ICSE) - A Private English Medium School in Majlishpur, Kaliyaganj, West Bengal, offering Nursery to Class V education under the ICSE board." />
-  <title>Urmila Academy (ICSE) | A Private English & Bengali Medium School, Kaliyaganj</title>
+  <meta name="description" content="Urmila Academy (ICSE) is a top-rated English & Bengali medium school in Kaliyaganj, guiding children from Nursery to Class V with ICSE-approved, future-focused learning — trusted by families across Kaliyaganj, Raiganj, Kushmandi and Hemtabad." />
+  <meta name="keywords" content="best ICSE school in Kaliyaganj, good ICSE school in Kaliyaganj, top ICSE school Kaliyaganj, top Nursery to Class V school Kaliyaganj, top 5 schools in Kaliyaganj, English medium school Kaliyaganj, Bengali medium school Kaliyaganj, best teachers Kaliyaganj, ICSE approved school, Urmila Academy, Urmila School, Urmila ICSE, school in Raiganj, school in Kushmandi, school in Hemtabad" />
+  <meta name="theme-color" content="#10263F" />
+  <title>Urmila Academy (ICSE) – Top ICSE School in Kaliyaganj | Nursery to Class V</title>
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Urmila Academy (ICSE) – Top ICSE School in Kaliyaganj" />
+  <meta property="og:description" content="ICSE-approved English & Bengali medium school for Nursery to Class V in Kaliyaganj — trusted by families in Kaliyaganj, Raiganj, Kushmandi and Hemtabad." />
+  <meta property="og:image" content="logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Urmila Academy (ICSE) – Top ICSE School in Kaliyaganj" />
+  <meta name="twitter:description" content="ICSE-approved classes, good teachers, Nursery to Class V — serving Kaliyaganj, Raiganj, Kushmandi and Hemtabad." />
+
+  <!-- Favicon / touch icon -->
+  <link rel="icon" href="image/Sig.jpg" type="image/png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://script.google.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23123C69'/%3E%3Ctext x='50' y='66' font-size='46' text-anchor='middle' fill='%23FFC94A' font-family='sans-serif' font-weight='800'%3EU%3C/text%3E%3C/svg%3E" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "School",
+    "name": "Urmila Academy (ICSE)",
+    "description": "A top-rated, ICSE-approved private English & Bengali medium school offering Nursery to Class V, with good teachers and quality classes that build a strong foundation for every child's future.",
+    "slogan": "Top ICSE school in Kaliyaganj for Nursery to Class V — serving Kaliyaganj, Raiganj, Kushmandi and Hemtabad.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Majlishpur",
+      "addressLocality": "Kaliyaganj",
+      "addressRegion": "West Bengal",
+      "postalCode": "733129",
+      "addressCountry": "IN"
+    },
+    "areaServed": ["Kaliyaganj", "Raiganj", "Kushmandi", "Hemtabad"],
+    "telephone": "+91-98337-15125"
+  }
+  </script>
 </head>
 <body>
 
+<!-- LOADER -->
 <div id="loader" aria-hidden="true">
-  <div class="loader-badge">UA</div>
+  <img src="logo.png" alt="" class="loader-logo" width="80" height="80" />
   <div class="loader-text">Urmila Academy — loading your visit…</div>
 </div>
+
+<!-- Kill-switch / service status banner (empty and invisible by default) -->
+<div id="site-status" role="status" aria-live="polite"></div>
 
 <header id="siteHeader">
   <div class="container nav-wrap">
     <a href="#home" class="brand">
-      <div class="brand-badge">UA</div>
+      <img src="image/Sig.jpg" alt="Urmila Academy" class="brand-logo" width="46" height="46" />
       <div class="brand-text"><strong>Urmila Academy</strong><span>ICSE • Kaliyaganj</span></div>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Primary">
       <a href="#home">Home</a>
       <a href="#about">About</a>
+      <a href="#principal">Principal</a>
       <a href="#facilities">Facilities</a>
       <a href="#gallery">Gallery</a>
       <a href="#notice">Notice</a>
       <a href="#contact">Contact</a>
-      <a href="#contact" class="btn btn-primary nav-cta" style="padding:10px 22px;">Visit Our Campus</a>
+      <a href="#contact" class="btn btn-primary nav-cta">Visit Our Campus</a>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
@@ -43,6 +85,7 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#home">Home</a>
   <a href="#about">About</a>
+  <a href="#principal">Principal</a>
   <a href="#facilities">Facilities</a>
   <a href="#gallery">Gallery</a>
   <a href="#notice">Notice</a>
@@ -51,36 +94,46 @@
 </div>
 
 <main>
-  <!-- HERO -->
+
+  <!-- ===== IMAGE SLIDER (above hero, auto-advances — timing set in config.js) ===== -->
+  <section class="slider-section" id="slider" aria-label="Campus photo slideshow">
+    <div class="slider-container">
+      <div class="slider-track" id="sliderTrack">
+        <div class="slide"><img src="image/1.jpg" alt="Urmila Academy campus photo 1" width="1600" height="600" loading="eager" /></div>
+        <div class="slide"><img src="image/2.webp" alt="Urmila Academy campus photo 2" width="1600" height="600" loading="lazy" /></div>
+        <div class="slide"><img src="image/3.jpg" alt="Urmila Academy campus photo 3" width="1600" height="600" loading="lazy" /></div>
+        <div class="slide"><img src="image/Sig.jpg" alt="Urmila Academy campus photo 4" width="1600" height="600" loading="lazy" /></div>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <!-- ===== HERO ===== -->
   <section class="hero" id="home">
     <div class="hero-decor" aria-hidden="true">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="blob blob-3"></div>
+      <div class="hero-emblem"><img src="image/icse.jpg" alt="" width="500" height="500" /></div>
     </div>
     <div class="container">
       <div class="hero-inner">
-        <span class="eyebrow">✦ Nursery to Class V &nbsp;·&nbsp; English & Bengali Medium</span>
+        <span class="eyebrow">&nbsp;✦&nbsp; Nursery to Class V &nbsp;·&nbsp; English & Bengali Medium</span>
         <h1>Where every child's <em>first steps</em> in learning feel like home.</h1>
         <p>Urmila Academy (ICSE) is a private English medium school in Majlishpur, Kaliyaganj, nurturing curious, confident learners from Nursery to Class V.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Visit Our Campus</a>
           <a href="#facilities" class="btn btn-ghost">Explore Facilities</a>
         </div>
-
         <div class="hero-stats-box glass-box">
           <div class="stat-item"><strong>ICSE</strong><span>Affiliated Board</span></div>
           <div class="stat-item"><strong>Nur–V</strong><span>Classes Offered</span></div>
           <div class="stat-item"><strong>10+</strong><span>Campus Facilities</span></div>
           <div class="stat-item"><strong>English</strong><span>Medium of Teaching</span></div>
         </div>
-
         <div class="hero-meta">
           <span class="location-chip"><i class="fas fa-map-pin"></i> Kaliyaganj, West Bengal</span>
           <div class="social-links">
-            <a href="https://www.facebook.com/p/Urmila-Academy-61559801026331/" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.youtube.com/@UrmilaAcademy2024" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/urmilaacademy23/" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/p/Urmila-Academy-61559801026331/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@UrmilaAcademy2024" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/urmilaacademy23/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -90,7 +143,7 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ===== ABOUT ===== -->
   <section class="about" id="about">
     <div class="container about-grid">
       <div class="about-copy reveal">
@@ -98,26 +151,49 @@
         <h2>A nurturing ICSE school rooted in Majlishpur, Kaliyaganj</h2>
         <p>Urmila Academy (ICSE) is a private English & Bengali medium institution dedicated to giving young learners — from Nursery through Class V — a strong academic foundation alongside warm, personal care.</p>
         <p>Located in Majlishpur, Kaliyaganj, West Bengal, our campus is built around one simple belief: children learn best when they feel safe, seen, and encouraged to be curious. We follow the ICSE curriculum while making space for music, movement, and expression in everyday school life.</p>
+        <p>As one of the ICSE-approved English &amp; Bengali medium schools in Kaliyaganj, Urmila Academy is built to give every child — from their very first day in Nursery through Class V — good teachers, structured guidance, and a clear foundation for the years ahead. Families from Kaliyaganj, Raiganj, Kushmandi and Hemtabad choose us for exactly this reason: a school that treats each child's future as seriously as their present.</p>
         <div class="about-tags">
-          <span>🎓 ICSE Board</span><span>🗣️ English Medium</span>
-          <span>🏆 Merit Scholarships</span><span>📍 Kaliyaganj, WB</span>
+          <span><i class="fas fa-graduation-cap" aria-hidden="true"></i> ICSE Board</span>
+          <span><i class="fas fa-language" aria-hidden="true"></i> English Medium</span>
+          <span><i class="fas fa-award" aria-hidden="true"></i> Merit Scholarships</span>
+          <span><i class="fas fa-location-dot" aria-hidden="true"></i> Kaliyaganj, WB</span>
         </div>
       </div>
       <div class="about-visual reveal">
         <h3>Why families choose us</h3>
         <ul>
-          <li><span class="dot">🧒</span> Small, attentive classrooms from Nursery to Class V</li>
-          <li><span class="dot">📚</span> Structured ICSE curriculum, taught in English</li>
-          <li><span class="dot">🎶</span> Daily music, dance &amp; recitation practice</li>
-          <li><span class="dot">🛡️</span> CCTV‑monitored, secure campus</li>
-          <li><span class="dot">🚌</span> Car facility for safe pick‑up &amp; drop</li>
-          <li><span class="dot">🤝</span> Safe &amp; Caring environment</li>
+          <li><span class="dot"><i class="fas fa-people-group" aria-hidden="true"></i></span> Small, attentive classrooms from Nursery to Class V</li>
+          <li><span class="dot"><i class="fas fa-book-open" aria-hidden="true"></i></span> Structured ICSE curriculum, taught in English</li>
+          <li><span class="dot"><i class="fas fa-music" aria-hidden="true"></i></span> Daily music, dance &amp; recitation practice</li>
+          <li><span class="dot"><i class="fas fa-shield-halved" aria-hidden="true"></i></span> CCTV‑monitored, secure campus</li>
+          <li><span class="dot"><i class="fas fa-van-shuttle" aria-hidden="true"></i></span> Car facility for safe pick‑up &amp; drop</li>
+          <li><span class="dot"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i></span> Safe &amp; Caring environment</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- FACILITIES -->
+  <!-- ===== PRINCIPAL'S MESSAGE ===== -->
+  <section class="principal" id="principal">
+    <div class="container principal-grid">
+      <div class="principal-image reveal">
+        <img src="principal.jpg"width="600" height="600" loading="lazy" />
+      </div>
+      <div class="principal-message reveal">
+        <span class="eyebrow">Principal's Desk</span>
+        <h2>Message from the Principal</h2>
+        <blockquote>
+          "Education is the most powerful weapon which you can use to change the world."
+        </blockquote>
+        <p>
+          At Urmila Academy, we believe in nurturing not just academic excellence but also the character and creativity of every child. Our dedicated faculty and supportive environment ensure that each student feels valued and inspired to reach their full potential.
+        </p>
+        <p class="principal-signature">— Mrs. Urmila Devi, Principal</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FACILITIES ===== -->
   <section class="facilities" id="facilities">
     <div class="container">
       <div class="section-head reveal">
@@ -126,69 +202,139 @@
         <p>A well‑rounded campus designed for learning, play, health, and creativity — all under one roof.</p>
       </div>
       <div class="fac-grid stagger" id="facGrid">
-        <div class="fac-card reveal" style="--i:0"><div class="fac-icon">💻</div><h4>Computer Lab</h4></div>
-        <div class="fac-card reveal" style="--i:1"><div class="fac-icon">⚽</div><h4>Playground</h4></div>
-        <div class="fac-card reveal" style="--i:2"><div class="fac-icon">📖</div><h4>Library</h4></div>
-        <div class="fac-card reveal" style="--i:3"><div class="fac-icon">🎥</div><h4>CCTV Security</h4></div>
-        <div class="fac-card reveal" style="--i:4"><div class="fac-icon">🏠</div><h4>Hostel</h4></div>
-        <div class="fac-card reveal" style="--i:5"><div class="fac-icon">🚐</div><h4>Car Facility</h4></div>
-        <div class="fac-card reveal" style="--i:6"><div class="fac-icon">🧘</div><h4>Yoga</h4></div>
-        <div class="fac-card reveal" style="--i:7"><div class="fac-icon">🎵</div><h4>Music</h4></div>
-        <div class="fac-card reveal" style="--i:8"><div class="fac-icon">💃</div><h4>Dance</h4></div>
-        <div class="fac-card reveal" style="--i:9"><div class="fac-icon">🎤</div><h4>Recitation &amp; Speech</h4></div>
-        <div class="fac-card reveal" style="--i:10"><div class="fac-icon">🏆</div><h4>Merit Scholarships</h4></div>
-        <div class="fac-card reveal" style="--i:11"><div class="fac-icon">🎨</div><h4>Creative Arts</h4></div>
+        <div class="fac-card reveal" style="--i:0">
+          <div class="fac-image"><img src="fac-computer.jpg" alt="Computer Lab" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-desktop" aria-hidden="true"></i></div>
+          <h4>Computer Lab</h4>
+        </div>
+        <div class="fac-card reveal" style="--i:1">
+          <div class="fac-image"><img src="fac-playground.jpg" alt="Playground" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-futbol" aria-hidden="true"></i></div>
+          <h4>Playground</h4>
+        </div>
+        <div class="fac-card reveal" style="--i:2">
+          <div class="fac-image"><img src="fac-library.jpg" alt="Library" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-book" aria-hidden="true"></i></div>
+          <h4>Library</h4>
+        </div>
+        <div class="fac-card reveal" style="--i:3">
+          <div class="fac-image"><img src="fac-cctv.jpg" alt="CCTV Security" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-video" aria-hidden="true"></i></div>
+          <h4>CCTV Security</h4>
+        </div>
+        <div class="fac-card reveal" style="--i:4">
+          <div class="fac-image"><img src="fac-hostel.jpg" alt="Hostel" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-house" aria-hidden="true"></i></div>
+          <h4>Hostel</h4>
+        </div>
+        <div class="fac-card reveal" style="--i:5">
+          <div class="fac-image"><img src="fac-car.jpg" alt="Car Facility" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-van-shuttle" aria-hidden="true"></i></div>
+          <h4>Car Facility</h4>
+        </div>
+        <div class="fac-card reveal" style="--i:6">
+          <div class="fac-image"><img src="fac-yoga.jpg" alt="Yoga" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-spa" aria-hidden="true"></i></div>
+          <h4>Yoga</h4>
+        </div>
+        <div class="fac-card reveal" style="--i:7">
+          <div class="fac-image"><img src="fac-music.jpg" alt="Music" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-music" aria-hidden="true"></i></div>
+          <h4>Music</h4>
+        </div>
+        <div class="fac-card reveal" style="--i:8">
+          <div class="fac-image"><img src="fac-dance.jpg" alt="Dance" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-masks-theater" aria-hidden="true"></i></div>
+          <h4>Dance</h4>
+        </div>
+        <div class="fac-card reveal" style="--i:9">
+          <div class="fac-image"><img src="fac-recitation.jpg" alt="Recitation & Speech" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-microphone" aria-hidden="true"></i></div>
+          <h4>Recitation &amp; Speech</h4>
+        </div>
+        <div class="fac-card reveal" style="--i:10">
+          <div class="fac-image"><img src="fac-scholarship.jpg" alt="Merit Scholarships" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+          <h4>Merit Scholarships</h4>
+        </div>
+        <div class="fac-card reveal" style="--i:11">
+          <div class="fac-image"><img src="fac-arts.jpg" alt="Creative Arts" width="640" height="420" loading="lazy" /></div>
+          <div class="fac-icon"><i class="fas fa-palette" aria-hidden="true"></i></div>
+          <h4>Creative Arts</h4>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <section class="facilities" id="gallery" style="background:var(--cream);padding-top:20px;">
+  <!-- ===== GALLERY (dynamic from Google Sheets) ===== -->
+  <section class="gallery" id="gallery">
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Gallery</span>
         <h2>A glimpse into our campus</h2>
-        <p>Photos from school life will be featured here soon — check back for updates.</p>
+        <p>Photos from school life – click on any image to enlarge.</p>
       </div>
+      <div class="gallery-carousel" id="galleryCarousel">
+        <button class="gallery-arrow left" id="galleryPrev" aria-label="Previous photo">&#10094;</button>
+        <div class="gallery-track" id="galleryTrack" aria-live="polite">
+          <div class="pin-card" style="margin:0 auto;"><span class="tag">Loading…</span><p>Fetching gallery…</p></div>
+        </div>
+        <button class="gallery-arrow right" id="galleryNext" aria-label="Next photo">&#10095;</button>
+      </div>
+      <div class="gallery-dots" id="galleryDots"></div>
+    </div>
+    <!-- Modal for enlarged image — stays open until the close (×) button is clicked -->
+    <div class="gallery-modal" id="galleryModal" role="dialog" aria-modal="true" aria-label="Enlarged gallery photo">
+      <button class="modal-close" id="galleryModalClose" aria-label="Close">&times;</button>
+      <img class="modal-content" id="galleryModalImg" src="" alt="" />
     </div>
   </section>
 
-  <!-- NOTICE BOARD -->
+  <!-- ===== NOTICE BOARD (dynamic from Google Sheets) ===== -->
   <section class="notice" id="notice">
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Stay Informed</span>
         <h2>Notice &amp; Updates Board</h2>
-        <p>The latest notices, exam schedule, and result updates from Urmila Academy — pinned right here.</p>
+        <p>The latest notices, exam schedule, and result updates from Urmila Academy — all in one place.</p>
       </div>
       <div class="board-grid">
+        <!-- NOTICES -->
         <div class="board-col reveal">
-          <h3><span class="ico">📌</span> Recent Notices</h3>
-          <div class="pin-card"><span class="tag">Notice</span><p>School reopens on Wednesday after the summer break.</p><small>Placeholder date — to be confirmed</small></div>
-          <div class="pin-card"><span class="tag">Meeting</span><p>PTA meeting scheduled for all Nursery &amp; Class I parents.</p><small>Placeholder date — to be confirmed</small></div>
-          <div class="pin-card"><span class="tag">Reminder</span><p>Winter uniform to be worn from next Monday onward.</p><small>Placeholder date — to be confirmed</small></div>
-          <div class="pin-card"><span class="tag">Event</span><p>Annual Recitation &amp; Speech competition — registrations open soon.</p><small>Placeholder date — to be confirmed</small></div>
+          <h3><span class="ico"><i class="fas fa-bullhorn" aria-hidden="true"></i></span> Recent Notices</h3>
+          <div id="noticeList" aria-live="polite">
+            <div class="pin-card"><span class="tag">Loading…</span><p>Fetching notices…</p></div>
+          </div>
         </div>
+        <!-- EXAM TIMETABLE -->
         <div class="board-col reveal">
-          <h3><span class="ico">🗓️</span> Exam Timetable</h3>
-          <div class="exam-row"><span class="name">Mid-Term — Class I</span><span class="date">Date TBA</span></div>
-          <div class="exam-row"><span class="name">Mid-Term — Class II</span><span class="date">Date TBA</span></div>
-          <div class="exam-row"><span class="name">Mid-Term — Class III</span><span class="date">Date TBA</span></div>
-          <div class="exam-row"><span class="name">Final Exam — All Classes</span><span class="date">Date TBA</span></div>
-          <div class="exam-row" style="margin-bottom:0;"><span class="name">Result Declaration</span><span class="date">Date TBA</span></div>
+          <h3><span class="ico"><i class="fas fa-calendar-days" aria-hidden="true"></i></span> Exam Timetable</h3>
+          <div id="examTable" aria-live="polite">
+            <div class="exam-row"><span class="name">Loading…</span><span class="date">Please wait</span></div>
+          </div>
         </div>
+        <!-- MARKS & RESULTS -->
         <div class="board-col reveal">
-          <h3><span class="ico">📊</span> Marks &amp; Results</h3>
-          <div class="results-card">
-            <div class="ico-big">🔔</div>
-            <p>Results for the current academic session will be published here shortly. Stay tuned!</p>
+          <h3><span class="ico"><i class="fas fa-chart-column" aria-hidden="true"></i></span> Marks &amp; Results</h3>
+          <div id="resultsList" aria-live="polite">
+            <!-- Default message shown until data is added to the Results sheet -->
+            <div class="results-card" id="resultsDefault">
+              <div class="ico-big"><i class="fas fa-bell" aria-hidden="true"></i></div>
+              <p>Results for the current academic session will be published here shortly. Stay tuned!</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Modal for result image with download — stays open until the close (×) button is clicked -->
+    <div class="result-modal" id="resultModal" role="dialog" aria-modal="true" aria-label="Class result image">
+      <button class="modal-close" id="resultModalClose" aria-label="Close">&times;</button>
+      <img class="modal-content" id="resultModalImg" src="" alt="" />
+      <a class="download-btn" id="resultDownloadBtn" href="#" download>⬇ Download</a>
+    </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ===== CONTACT ===== -->
   <section class="contact" id="contact">
     <div class="container">
       <div class="section-head reveal">
@@ -200,20 +346,26 @@
         <div class="contact-card reveal">
           <h3>Contact Details</h3>
           <div class="contact-item">
-            <div class="ico">📍</div>
+            <div class="ico"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
             <div><strong>Address</strong><span>Majlishpur, Kaliyaganj, West Bengal 733129</span></div>
           </div>
           <div class="contact-item">
-            <div class="ico">📞</div>
+            <div class="ico"><i class="fas fa-phone" aria-hidden="true"></i></div>
             <div>
               <strong>Phone</strong>
-              <a href="tel:+919833715125">98337 15125</a>
               <a href="tel:+919933715125">99337 15125</a>
               <a href="tel:+919832369514">98323 69514</a>
             </div>
           </div>
           <div class="contact-item">
-            <div class="ico">🕐</div>
+            <div class="ico"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:info@urmilaacademy.com">info@urmilaacademy.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ico"><i class="fas fa-clock" aria-hidden="true"></i></div>
             <div style="width:100%;">
               <strong>School Timings</strong>
               <table class="timing-table">
@@ -226,8 +378,8 @@
           </div>
         </div>
         <div class="map-wrap reveal">
-          <div class="skeleton" id="mapSkeleton" style="position:absolute;inset:0;"></div>
-          <iframe title="Urmila Academy location map" src="https://www.google.com/maps?q=J8WW%2B86X+Kaliyaganj,West+Bengal&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onload="document.getElementById('mapSkeleton')?.remove();"></iframe>
+          <div class="skeleton" id="mapSkeleton"></div>
+          <iframe id="mapFrame" title="Urmila Academy location map" src="https://www.google.com/maps?q=J8WW%2B86X+Kaliyaganj,West+Bengal&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -238,7 +390,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand"><div class="brand-badge">UA</div><strong>Urmila Academy (ICSE)</strong></div>
+        <div class="footer-brand"><img src="logo.png" alt="Urmila Academy" class="footer-logo" width="40" height="40" /><strong>Urmila Academy (ICSE)</strong></div>
         <p style="font-size:0.92rem;max-width:320px;">A Private English & Bengali Medium School, Majlishpur, Kaliyaganj, West Bengal — nurturing learners from Nursery to Class V.</p>
       </div>
       <div>
@@ -247,24 +399,25 @@
       </div>
       <div>
         <h5>Contact</h5>
-        <ul><li><a href="tel:+919833715125">98337 15125</a></li><li><a href="tel:+919933715125">99337 15125</a></li><li><a href="tel:+919832369514">98323 69514</a></li><li>Majlishpur, Kaliyaganj, WB 733129</li></ul>
+        <ul><li><a href="tel:+919933715125">99337 15125</a></li><li><a href="tel:+919832369514">98323 69514</a></li><li><a href="mailto:info@urmilaacademy.com">info@urmilaacademy.com</a></li><li>Majlishpur, Kaliyaganj, WB 733129</li></ul>
       </div>
       <div>
         <h5>Follow Us</h5>
         <div class="footer-socials">
-          <a href="https://www.facebook.com/p/Urmila-Academy-61559801026331/" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.youtube.com/@UrmilaAcademy2024" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.instagram.com/urmilaacademy23/" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/p/Urmila-Academy-61559801026331/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/@UrmilaAcademy2024" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/urmilaacademy23/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© <span id="year"></span> Urmila Academy. All rights reserved by <a href="https://readyurweb.vercel.app" target="_blank" rel="noopener noreferrer" class="credit-link">ReadYurWeb</a>.</span>
-      <span>Nursery to Class V · English & Bengali Medium · ICSE Board</span>
+      <span>&nbsp;✦&nbsp; Nursery to Class V · English & Bengali Medium · ICSE Board</span>
     </div>
   </div>
 </footer>
 
+<script src="config.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
