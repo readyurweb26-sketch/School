@@ -115,7 +115,7 @@
       if (index < 0) index = total - 1;
       else if (index >= total) index = 0;
       current = index;
-      sliderTrack.style.transform = 'translateX(-' + (current * 100) + '%)';
+      sliderTrack.className = 'slider-track slide-pos-' + current;
       dotsContainer.querySelectorAll('span').forEach(function (d, i) {
         d.classList.toggle('active', i === current);
       });
@@ -216,8 +216,7 @@
   function galleryMessage(text) {
     clear(galleryTrack);
     const p = document.createElement('p');
-    p.style.textAlign = 'center';
-    p.style.width = '100%';
+    p.className = 'gallery-message';
     p.textContent = text;
     galleryTrack.appendChild(p);
   }
@@ -393,6 +392,9 @@
       }
       clear(examContainer);
 
+      const rowsWrap = document.createElement('div');
+      rowsWrap.className = 'exam-rows-scroll';
+
       // Group consecutive rows by class (backend already sorts Nursery -> V)
       let lastClass = null;
       data.forEach(function (item) {
@@ -400,7 +402,7 @@
           const heading = document.createElement('div');
           heading.className = 'exam-class-heading';
           heading.textContent = item.Class;
-          examContainer.appendChild(heading);
+          rowsWrap.appendChild(heading);
           lastClass = item.Class;
         }
         const row = document.createElement('div');
@@ -416,8 +418,9 @@
 
         row.appendChild(name);
         row.appendChild(date);
-        examContainer.appendChild(row);
+        rowsWrap.appendChild(row);
       });
+      examContainer.appendChild(rowsWrap);
 
       const note = document.createElement('p');
       note.className = 'exam-note';
